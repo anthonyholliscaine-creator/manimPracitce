@@ -396,13 +396,13 @@ class FluidSPHScene(Scene):
         W = 6.0
 
         def f(x):
-            return 1 + 0.5 * x
+            # return 1 + 0.5 * x
             # return 1 + 3 * np.sin(np.pi*x/W)
-            # return (x-3)**2
+            return (x-3)**2
 
         # label = MathTex(rf"f(x) = 1 + 3 \cdot \sin(\frac{{\pi}}{{{W}}} x)")
-        label = MathTex(rf"f(x) = 1+\frac{{1}}{{2}} \cdot x")
-        # label = MathTex(rf"f(x) = (x-3)^2")
+        # label = MathTex(rf"f(x) = 1+\frac{{1}}{{2}} \cdot x")
+        label = MathTex(rf"f(x) = (x-3)^2")
         label.color = RED_D
         label.scale(0.8)
 
